@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
+* {
+   padding: 0;
+   margin: 0;
+   border: 0;
+}
+*,
+*:before,
+*:after {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+:focus,
+:active {
+   outline: none;
+}
+a:focus,
+a:active {
+   outline: none;
+}
+nav,
+footer,
+header,
+aside {
+   display: block;
+}
+html,
+body {
+   height: 100%;
+   width: 100%;
+   font-style: 100%;
+   line-height: 1;
+   font-style: 14px;
+   -ms-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+   font-family: inherit;
+}
+input::-ms-clear {
+   display: none;
+}
+button {
+   cursor: pointer;
+}
+button::-moz-focus-inner {
+   padding: 0;
+   border: 0;
+}
+a,
+a:visited {
+   text-decoration: none;
+}
+a:hover {
+   text-decoration: none;
+}
+ul li {
+   list-style-type: none;
+}
+img {
+   vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-style: inherit;
+   font-weight: inherit;
+}
+.wrapper {
+   width: 100vw;
+   height: 100vh;
+   overflow: hidden;
+}
+._container {
+   margin: 0 auto;
+   padding: 0 15px;
+   max-width: 1440px;
+}
+:root {
+   /* Typography */
+   --font-family: 'Nunito Sans', sans-serif;
+   --fs-home: 14px;
+   --fs-card: 16px;
+   --fw-light: 300;
+   --fw-normal: 600;
+   --fw-bold: 800;
+   /* Radius */
+   --rad: 0.5rem;
+}
+body[data-theme='dark'] {
+   --color-elements: hsl(209, 23%, 22%);
+   --color-bg: hsl(207, 26%, 17%);
+   --color-text: hsl(0, 0%, 100%);
+}
+body[data-theme='light'] {
+   --color-text: hsl(200, 15%, 8%);
+   --color-light-mode-input: hsl(0, 0%, 52%);
+   --color-bg: hsl(0, 0%, 98%);
+   --color-elements: hsl(0, 0%, 100%);
+}
+body {
+   color: var(--color-text);
+   background-color: var(--color-bg);
+   font-family: var(--font-family);
+   font-size: var(--fs-home);
+   font-weight: var(--fw-normal);
+}
