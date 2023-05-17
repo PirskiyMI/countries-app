@@ -91,6 +91,8 @@ h6 {
    --fw-light: 300;
    --fw-normal: 600;
    --fw-bold: 800;
+
+   --shadow: 0 0 2px gray;
    /* Radius */
    --rad: 0.5rem;
 }

@@ -1,0 +1,47 @@
+.cards{
+   position: relative;
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   gap: 40px;
+   &_item{
+      flex: 1 0 20%;
+      min-width: 260px;
+      max-width: 400px;
+   }
+}
+
+.card {
+   background-color: var(--color-elements);
+   border-radius: var(--rad);
+   overflow: hidden;
+   &_img {
+      width: 100%;
+      height: 200px;
+      position: relative;
+      img {
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         top: 0;
+         left: 0;
+         object-fit: conver;
+      }
+   }
+   &_info {
+      padding: 20px 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+   }
+   &_title {
+      font-weight: var(--fw-bold);
+   }
+   &_stats {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+   }
+}

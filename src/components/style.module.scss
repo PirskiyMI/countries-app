@@ -1,6 +1,11 @@
 .header{
    padding: 15px 0px;
    background-color: var(--color-elements);
+   box-shadow: var(--shadow);
+   &_title {
+      font-size: 36px;
+      color: inherit;
+   }
    &_container{
       display: flex;
       align-items: center;

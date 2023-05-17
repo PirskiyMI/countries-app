@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import styles from './style.module.scss';
 import cn from 'classnames';
 import { IoMoonOutline, IoMoon } from 'react-icons/io5';
+import {Link} from 'react-router-dom';
 
 export const Header = () => {
    const [theme, setTheme] = useState('light');
@@ -17,7 +18,7 @@ export const Header = () => {
    return (
       <header className={styles.header}>
          <div className={cn(styles.header_container, '_container')}>
-            <h1 className={styles.header_title}>Where in the world</h1>
+            <Link to='/' className={styles.header_title}>Where in the world</Link>
             <div className={styles.header_switcher} onClick={changeTheme}>
                <span className={styles.header_icon}>
                   {theme === 'light' ? <IoMoonOutline /> : <IoMoon />}
