@@ -51,6 +51,9 @@ button::-moz-focus-inner {
    padding: 0;
    border: 0;
 }
+a {
+   color: inherit;
+}
 a,
 a:visited {
    text-decoration: none;
@@ -81,7 +84,7 @@ h6 {
 ._container {
    margin: 0 auto;
    padding: 0 15px;
-   max-width: 1440px;
+   max-width: 1200px;
 }
 :root {
    /* Typography */

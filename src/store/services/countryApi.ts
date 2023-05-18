@@ -1,5 +1,7 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/dist/query/react';
 import { ICountry } from '../../models/ICountry';
+import { url } from 'inspector';
+import { ICountryCard } from '../../models/ICountryCard';
 
 export const countryApi = createApi({
    reducerPath: 'countryApi',
@@ -11,6 +13,23 @@ export const countryApi = createApi({
          query: (fields: string) => ({
             url: '/all',
             params: { fields: fields },
+         }),
+      }),
+      fetchCurrentCountry: build.query<ICountryCard[], string>({
+         query: (countryName: string) => ({
+            url: `/name/${countryName}`,
+            params: {
+               fields:
+                  'flags,name,population,region,subregion,capital,tld,currencies,languages,borders',
+            },
+         }),
+      }),
+      fetchCountryNeighbours: build.query({
+         query: (args: string) => ({
+            url: `/alpha`,
+            params: {
+               codes: args,
+            },
          }),
       }),
    }),

@@ -15,15 +15,6 @@ export interface HomeFieldsProps {
 export const SELECT_ARROW = `${styles.home_arrow}`;
 
 export const HomeFields = (props: HomeFieldsProps) => {
-   // const [isActive, setActive] = useState(false);
-
-   // const selectToggle = (e: any) => {
-   //    if (!e.target.classList.contains(`${styles.home_arrow}`) && isActive === true) {
-   //       console.log('click');
-   //       setActive(false);
-   //    }
-   // };
-
    return (
       <div className={styles.home_inputs}>
          <HomeSearch value={props.value} setValue={props.setValue} />

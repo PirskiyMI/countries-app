@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import cn from 'classnames';
 import { IoChevronDown } from 'react-icons/io5';
 
@@ -12,7 +11,6 @@ export interface HomeSelectProps {
 }
 
 export const HomeSelect = ({select, setSelect, isActive, setActive}: HomeSelectProps) => {
-
    const countryList = ['Africa', 'Americas', 'Asia', 'Europe', 'Oceania'];
 
    return (
