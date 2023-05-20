@@ -15,4 +15,4 @@
    <li>RTK Query</li>
 </ul>
 
-[GitHub pages](https://pirskiymi.github.io/age-calculator-app/)
+[GitHub pages](https://pirskiymi.github.io/countries-app/)
