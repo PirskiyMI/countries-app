@@ -13,7 +13,6 @@ export const App = () => {
 
    const selectToggle = (e: any) => {
       if (!e.target.classList.contains(SELECT_ARROW) && isActive === true) {
-         console.log('click');
          setActive(false);
       }
    };
