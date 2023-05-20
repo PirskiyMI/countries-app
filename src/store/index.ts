@@ -1,7 +1,9 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import { countryApi } from './services/countryApi';
+import selectReducer from './reducers/selectSlice';
 
 const rootReducer = combineReducers({
+   selectReducer,
    [countryApi.reducerPath]: countryApi.reducer,
 });
 

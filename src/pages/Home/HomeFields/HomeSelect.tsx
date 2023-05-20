@@ -11,6 +11,7 @@ export interface HomeSelectProps {
 }
 
 export const HomeSelect = ({select, setSelect, isActive, setActive}: HomeSelectProps) => {
+
    const countryList = ['Africa', 'Americas', 'Asia', 'Europe', 'Oceania'];
 
    return (
