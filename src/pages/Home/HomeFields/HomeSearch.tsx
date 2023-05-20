@@ -3,8 +3,6 @@ import { IoSearchOutline } from 'react-icons/io5';
 import styles from './styles/style.module.scss';
 import { HomeSearchProps } from './types';
 
-
-
 export const HomeSearch = ({ value, setValue }: HomeSearchProps) => {
    return (
       <div className={styles.home_search}>

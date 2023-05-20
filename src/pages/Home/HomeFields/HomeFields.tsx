@@ -4,7 +4,6 @@ import { HomeSelect } from './HomeSelect';
 import styles from './styles/style.module.scss';
 import { HomeFieldsProps } from './types';
 
-export const SELECT_ARROW = `${styles.home_arrow}`;
 
 export const HomeFields = (props: HomeFieldsProps) => {
    return (

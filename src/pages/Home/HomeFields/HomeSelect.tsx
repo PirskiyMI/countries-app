@@ -5,14 +5,11 @@ import styles from './styles/style.module.scss';
 import { useAppDispatch, useAppSelector } from '../../../hooks';
 import { selectSlice } from '../../../store/reducers/selectSlice';
 import { HomeSelectProps } from './types';
-
-
+import { countryList } from './constants';
 
 export const HomeSelect = ({ select, setSelect }: HomeSelectProps) => {
    const { isActive } = useAppSelector((state) => state.selectReducer);
    const dispatch = useAppDispatch();
-
-   const countryList = ['Africa', 'Americas', 'Asia', 'Europe', 'Oceania'];
 
    const toggleSelect = selectSlice.actions.toggleSelect(!isActive);
 
