@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import styles from './style.module.scss';
 import cn from 'classnames';
 import { IoMoonOutline, IoMoon } from 'react-icons/io5';
-import {Link, Outlet} from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 
 export const Layout = () => {
    const [theme, setTheme] = useState('light');
@@ -31,7 +31,9 @@ export const Layout = () => {
                </div>
             </div>
          </header>
-         <Outlet/>
+         <main>
+            <Outlet />
+         </main>
       </>
    );
 };

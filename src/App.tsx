@@ -1,6 +1,5 @@
 import { Home } from './pages/Home/Home';
 import { SELECT_ARROW } from './pages/Home/HomeFields/constants/index';
-import './styles/App.css';
 import { Routes, Route } from 'react-router-dom';
 
 import { useAppDispatch, useAppSelector } from './hooks';
@@ -21,7 +20,7 @@ export const App = () => {
    };
 
    return (
-      <div className="app" onClick={selectToggle}>
+      <div onClick={selectToggle}>
          <Routes>
             <Route path="/" element={<Layout />}>
                <Route index element={<Home />} />
