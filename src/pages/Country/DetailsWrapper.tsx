@@ -1,8 +1,8 @@
-import { ICountryCard } from "../../models/ICountryCard";
-import { DetailsFlag } from "./DetailsFlag";
-import { DetailsInfo } from "./DetailsInfo";
+import { ICountryDetails } from '../../models/ICountry';
+import { DetailsFlag } from './DetailsFlag';
+import { DetailsInfo } from './DetailsInfo';
 
-export const DetailsWrapper = ({ flags, ...detailInfo }: ICountryCard) => {
+export const DetailsWrapper = ({ flags, ...detailInfo }: ICountryDetails) => {
    return (
       <>
          <DetailsFlag {...flags} />

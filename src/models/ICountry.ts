@@ -1,6 +1,6 @@
 export interface ICountry {
-   flags: CountryFlags;
-   name: CountryName;
+   flags: ICountryFlags;
+   name: ICountryName;
    currencies: any;
    capital: string[];
    region: string;
@@ -9,13 +9,19 @@ export interface ICountry {
    continents: string[];
 }
 
-export interface CountryFlags {
+export interface ICountryDetails extends ICountry {
+   tld: string[];
+   subregion: string;
+   languages: any[];
+}
+
+export interface ICountryFlags {
    png: string;
    svg: string;
    alt: string;
 }
 
-export interface CountryName {
+export interface ICountryName {
    common: string;
    official: string;
    nativeName: any;
