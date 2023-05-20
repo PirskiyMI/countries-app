@@ -6,7 +6,7 @@ import styles from './styles/style.module.scss';
 export const HomeItem = ({ flags, name, population, region, capital }: ICountry) => {
    return (
       <Link
-         to={`/countries-app/country/${name.common.toLowerCase()}`}
+         to={`/country/${name.common.toLowerCase()}`}
          className={cn(styles.cards_item, styles.card)}>
          <div className={styles.card_img}>
             <img src={flags.png} alt={flags.alt} />
