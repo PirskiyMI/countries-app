@@ -1,21 +1,9 @@
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { countryApi } from '../../store/services/countryApi';
 import styles from './styles/style.module.scss';
 import cn from 'classnames';
-import { useEffect, useState } from 'react';
 import { Preloader } from '../../components/Preloader/Preloader';
-import { ICountryCard, ICountryCardFlags, ICountryCardName } from '../../models/ICountryCard';
 import { DetailsWrapper } from './DetailsWrapper';
-
-
-
-
-
-
-
-
-
-
 
 export const Details = () => {
    const { name } = useParams();
