@@ -1,5 +1,5 @@
 import { DetailsInfoProps } from "./types";
-import styles from './styles/styles.module.scss'
+import styles from './styles/style.module.scss'
 import { DetailsLists } from "./DetailsLists";
 import { DetailsBorders } from "./DetailsBorders";
 

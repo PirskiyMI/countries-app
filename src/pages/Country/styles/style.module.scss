@@ -15,13 +15,14 @@
       box-shadow: var(--shadow);
       border-radius: var(--rad);
       overflow: hidden;
-      max-width: 70%;
+      max-width: 100%;
    }
    &_info {
       flex: 1 1 40%;
       display: flex;
       flex-direction: column;
       gap: 40px;
+      // width: 100%;
    }
    &_title {
       font-weight: var(--fw-bold);
@@ -66,7 +67,5 @@
       background-color: var(--color-elements);
       box-shadow: var(--shadow);
       border-radius: var(--rad);
-   }
-   &_ {
    }
 }

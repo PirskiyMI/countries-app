@@ -1,4 +1,4 @@
-import styles from './styles/styles.module.scss'
+import styles from './styles/style.module.scss'
 import { DetailsListsProps } from './types';
 
 export const DetailsLists = (props: DetailsListsProps) => {
