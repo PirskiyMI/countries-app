@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import { Navigate, useParams } from 'react-router-dom';
 import { countryApi } from '../../store/services/countryApi';
 import styles from './styles/style.module.scss';
 import cn from 'classnames';
@@ -7,10 +7,14 @@ import { DetailsWrapper } from './DetailsWrapper';
 
 export const Details = () => {
    const { name } = useParams();
-   const { data, isLoading } = countryApi.useFetchCurrentCountryQuery(name || '');
+   const { data, isLoading, isError } = countryApi.useFetchCurrentCountryQuery(name || '');
 
    if (isLoading) {
       return <Preloader />;
+   }
+
+   if (isError) {
+      return <Navigate to={'*'} />;
    }
 
    return (
