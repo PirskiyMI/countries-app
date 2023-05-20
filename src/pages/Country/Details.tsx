@@ -10,32 +10,7 @@ export const DetailsFlag = ({ svg, alt }: ICountryCardFlags) => {
    return <img className={styles.country_flag} src={svg} alt={alt} />;
 };
 
-export interface DetailsBordersProps {
-   borders: string[];
-}
 
-export interface DetailsListsProps {
-   name: ICountryCardName;
-   tld: string[];
-   currencies: any;
-   capital: string[];
-   region: string;
-   subregion: string;
-   languages: any;
-   population: number;
-}
-
-export interface DetailsInfoProps {
-   name: ICountryCardName;
-   tld: string[];
-   currencies: any;
-   capital: string[];
-   region: string;
-   subregion: string;
-   languages: any;
-   borders: string[];
-   population: number;
-}
 
 export const DetailsBorders = ({ borders }: DetailsBordersProps) => {
    const [neighborsList, setNeighborsList] = useState([]);
