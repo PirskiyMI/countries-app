@@ -12,7 +12,7 @@ export const selectSlice = createSlice({
    name: 'selectSlice',
    initialState,
    reducers: {
-      toddleSelect(state, action: PayloadAction<boolean>) {
+      toggleSelect(state, action: PayloadAction<boolean>) {
          state.isActive = action.payload;
       },
    },

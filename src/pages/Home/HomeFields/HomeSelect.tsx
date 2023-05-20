@@ -2,22 +2,26 @@ import cn from 'classnames';
 import { IoChevronDown } from 'react-icons/io5';
 
 import styles from './styles/style.module.scss';
+import { useAppDispatch, useAppSelector } from '../../../hooks';
+import { selectSlice } from '../../../store/reducers/selectSlice';
 
 export interface HomeSelectProps {
-   isActive: boolean;
    select: string;
-   setActive: (arg: boolean) => void;
    setSelect: (value: string) => void;
 }
 
-export const HomeSelect = ({select, setSelect, isActive, setActive}: HomeSelectProps) => {
+export const HomeSelect = ({ select, setSelect }: HomeSelectProps) => {
+   const { isActive } = useAppSelector((state) => state.selectReducer);
+   const dispatch = useAppDispatch();
 
    const countryList = ['Africa', 'Americas', 'Asia', 'Europe', 'Oceania'];
+
+   const toggleSelect = selectSlice.actions.toggleSelect(!isActive);
 
    return (
       <div className={styles.home_select}>
          <div>{select}</div>
-         <div className={styles.home_arrow} onClick={() => setActive(!isActive)}>
+         <div className={styles.home_arrow} onClick={() => dispatch(toggleSelect)}>
             <IoChevronDown />
          </div>
          <ul

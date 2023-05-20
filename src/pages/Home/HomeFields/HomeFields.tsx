@@ -8,8 +8,6 @@ export interface HomeFieldsProps {
    setValue: (value: string) => void;
    select: string;
    setSelect: (value: string) => void;
-   isActive: boolean;
-   setActive: (arg: boolean) => void;
 }
 
 export const SELECT_ARROW = `${styles.home_arrow}`;
@@ -21,8 +19,6 @@ export const HomeFields = (props: HomeFieldsProps) => {
          <HomeSelect
             select={props.select}
             setSelect={props.setSelect}
-            isActive={props.isActive}
-            setActive={props.setActive}
          />
       </div>
    );
