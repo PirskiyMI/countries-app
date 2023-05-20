@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { HomeSearch } from './HomeSearch';
 import { HomeSelect } from './HomeSelect';
 import styles from './styles/style.module.scss';

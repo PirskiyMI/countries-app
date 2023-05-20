@@ -1,5 +1,5 @@
 import { Navigate, useParams } from 'react-router-dom';
-import { countryApi } from '../../store/services/countryApi';
+import { countryApi } from '../../api/countryApi';
 import styles from './styles/style.module.scss';
 import cn from 'classnames';
 import { Preloader } from '../../components/Preloader/Preloader';

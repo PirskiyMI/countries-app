@@ -1,8 +1,8 @@
-import { Link } from "react-router-dom";
-import { countryApi } from "../../store/services/countryApi";
-import { DetailsBordersProps } from "./types";
+import { Link } from 'react-router-dom';
+import { countryApi } from '../../api/countryApi';
+import { DetailsBordersProps } from './types';
 import { useState, useEffect } from 'react';
-import styles from './styles/style.module.scss'
+import styles from './styles/style.module.scss';
 
 export const DetailsBorders = ({ borders }: DetailsBordersProps) => {
    const [neighborsList, setNeighborsList] = useState([]);

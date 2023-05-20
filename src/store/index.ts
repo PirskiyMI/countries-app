@@ -1,5 +1,5 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
-import { countryApi } from './services/countryApi';
+import { countryApi } from '../api/countryApi';
 import selectReducer from './reducers/selectSlice';
 
 const rootReducer = combineReducers({

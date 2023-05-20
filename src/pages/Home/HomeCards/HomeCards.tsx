@@ -1,6 +1,6 @@
 import { Preloader } from '../../../components/Preloader/Preloader';
 import { ICountry } from '../../../models/ICountry';
-import { countryApi } from '../../../store/services/countryApi';
+import { countryApi } from '../../../api/countryApi';
 import { HomeItem } from './HomeItem';
 import styles from './styles/style.module.scss';
 import { HomeCardsProps } from './types';
