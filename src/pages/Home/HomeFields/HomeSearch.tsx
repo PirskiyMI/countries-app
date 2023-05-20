@@ -1,11 +1,9 @@
 import { IoSearchOutline } from 'react-icons/io5';
 
 import styles from './styles/style.module.scss';
+import { HomeSearchProps } from './types';
 
-export interface HomeSearchProps {
-   value: string;
-   setValue: (value: string) => void;
-}
+
 
 export const HomeSearch = ({ value, setValue }: HomeSearchProps) => {
    return (

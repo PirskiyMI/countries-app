@@ -2,12 +2,14 @@ import { Home } from './pages/Home/Home';
 import { SELECT_ARROW } from './pages/Home/HomeFields/HomeFields';
 import './styles/App.css';
 import { Routes, Route } from 'react-router-dom';
+
+import { useAppDispatch, useAppSelector } from './hooks';
+import { selectSlice } from './store/reducers/selectSlice';
+
+import { Layout } from './components/Layout';
 import { NotFound } from './pages/NotFound/NotFound';
 import { Details } from './pages/Country/Details';
 
-import { Layout } from './components/Layout';
-import { useAppDispatch, useAppSelector } from './hooks';
-import { selectSlice } from './store/reducers/selectSlice';
 
 export const App = () => {
    const { isActive } = useAppSelector((state) => state.selectReducer);

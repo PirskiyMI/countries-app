@@ -4,11 +4,9 @@ import { IoChevronDown } from 'react-icons/io5';
 import styles from './styles/style.module.scss';
 import { useAppDispatch, useAppSelector } from '../../../hooks';
 import { selectSlice } from '../../../store/reducers/selectSlice';
+import { HomeSelectProps } from './types';
 
-export interface HomeSelectProps {
-   select: string;
-   setSelect: (value: string) => void;
-}
+
 
 export const HomeSelect = ({ select, setSelect }: HomeSelectProps) => {
    const { isActive } = useAppSelector((state) => state.selectReducer);

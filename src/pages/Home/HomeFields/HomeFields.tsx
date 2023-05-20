@@ -2,13 +2,7 @@ import { useState } from 'react';
 import { HomeSearch } from './HomeSearch';
 import { HomeSelect } from './HomeSelect';
 import styles from './styles/style.module.scss';
-
-export interface HomeFieldsProps {
-   value: string;
-   setValue: (value: string) => void;
-   select: string;
-   setSelect: (value: string) => void;
-}
+import { HomeFieldsProps } from './types';
 
 export const SELECT_ARROW = `${styles.home_arrow}`;
 
