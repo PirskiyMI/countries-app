@@ -22,7 +22,6 @@
       display: flex;
       flex-direction: column;
       gap: 40px;
-      // width: 100%;
    }
    &_title {
       font-weight: var(--fw-bold);
@@ -45,8 +44,6 @@
       span {
          font-weight: var(--fw-bold);
       }
-   }
-   &_item {
    }
    &_borders {
       display: flex;
