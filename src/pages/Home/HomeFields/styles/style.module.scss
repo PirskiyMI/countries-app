@@ -22,7 +22,7 @@
          width: 100%;
          background-color: transparent;
          color: var(--color-text);
-         &::placeholder{
+         &::placeholder {
             color: var(--color-text);
          }
       }
@@ -40,6 +40,7 @@
       padding: 15px;
       border-radius: var(--rad);
       user-select: none;
+      box-shadow: var(--shadow);
    }
    &_arrow {
       height: 100%;

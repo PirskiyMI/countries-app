@@ -3,18 +3,14 @@ import { ICountry } from '../../../models/ICountry';
 import { countryApi } from '../../../store/services/countryApi';
 import { HomeItem } from './HomeItem';
 import styles from './styles/style.module.scss';
-
-export interface HomeCardsProps {
-   select: string;
-   value: string;
-}
+import { HomeCardsProps } from './types';
 
 export const HomeCards = ({ value, select }: HomeCardsProps) => {
-   const { data, isLoading, isError } = countryApi.useFetchCountryQuery(
+   const { data, isLoading } = countryApi.useFetchCountryQuery(
       'name,region,capital,population,flags',
    );
    if (isLoading) {
-      return <Preloader/>;
+      return <Preloader />;
    }
    return (
       <section className={styles.cards}>
