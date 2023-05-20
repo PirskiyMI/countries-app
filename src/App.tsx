@@ -22,7 +22,7 @@ export const App = () => {
    return (
       <div onClick={selectToggle}>
          <Routes>
-            <Route path="/country-app" element={<Layout />}>
+            <Route path="/countries-app" element={<Layout />}>
                <Route index element={<Home />} />
                <Route path="country/:name" element={<Details />} />
                <Route path="*" element={<NotFound />} />
